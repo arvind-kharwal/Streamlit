@@ -1,3 +1,4 @@
 stack-data==0.3.0
 streamlit==1.38.0
 sympy==1.11.1
+openpyxl
