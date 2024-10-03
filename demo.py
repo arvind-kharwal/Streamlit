@@ -17,3 +17,17 @@ st.latex(r'''  a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
     a \left(\frac{1-r^{n}}{1-r}\right) ''')
 
 st.write(st)
+st.header("Form")
+name = st.text_input("**Enter Name:**")
+email = st.text_input("**Enter Email:**")
+msg = st.text_area("**Enter Your Message:**")
+classname = st.selectbox("**Enter Branch**",['CSE','ME','IT','CE','EC'])
+#classname = st.selectbox("**Enter Class**",[1,2,3,4])
+btn = st.button("Submit")
+
+if btn:
+    st.markdown(f'''
+    \nName: {name}
+    \nEmail: {email}
+    \nMessage: {msg}
+    \nClass Name: {classname}     ''') 
